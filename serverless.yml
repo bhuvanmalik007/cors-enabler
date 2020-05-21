@@ -11,7 +11,7 @@ package:
     - '!node_modules/node-fetch/**'
 
 functions:
-  hello:
+  corsEnablerLambda:
     handler: handler.corsEnabler
     events:
       - http:
