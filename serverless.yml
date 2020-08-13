@@ -18,6 +18,13 @@ functions:
           path: /unlock
           method: get
           cors: true
+  corsEnablerPost:
+    handler: handler.corsEnablerPost
+    events:
+      - http:
+          path: /post
+          method: post
+          cors: true
 
 plugins:
   - serverless-offline
